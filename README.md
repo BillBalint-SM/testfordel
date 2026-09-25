@@ -1,4 +1,4 @@
-# testfordel
+# intentionally conflicting fixture
 
 Disposable repository for a BontaFlowStack GitHub workflow check.
 
