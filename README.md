@@ -1,9 +1,9 @@
-# testfordel
+# testfordel workflow fixture
 
 Disposable repository for a BontaFlowStack GitHub workflow check.
 
 This repository contains disposable documentation, a standard-library Python
-check and a manually dispatched GitHub Actions fixture. Temporary GitHub Pages
+check and a GitHub Actions fixture triggered manually or by a push to `docs-test`. Temporary GitHub Pages
 configuration is used only during the authorized deployment tests.
 
 ## Verification
