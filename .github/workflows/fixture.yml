@@ -1,0 +1,24 @@
+name: BontaFlowStack fixture
+run-name: fixture-${{ inputs.marker }}-${{ inputs.mode }}
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [success, failure, wait]
+        default: success
+      marker:
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  fixture-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Run the deterministic fixture
+        env:
+          FIXTURE_MODE: ${{ inputs.mode }}
+        run: python3 src/fixture_check.py
