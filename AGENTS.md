@@ -12,9 +12,9 @@ Project foundation: complete
 ## Deploy Configuration
 
 - Platform: GitHub Pages, disposable test target
-- Production URL: pending provider readback; this is a test site
+- Production URL: https://billbalint-sm.github.io/testfordel/ (disposable test site)
 - Deploy workflow: branch deployment, `main`, `/docs`
 - Deploy status command: `gh api repos/BillBalint-SM/testfordel/pages/builds/latest`
 - Merge method: squash
 - Project type: static test page
-- Post-deploy health check: GET `/` and `/health.json`; expect HTTP 200 and revision `fixture-v1`
+- Post-deploy health check: GET `/` and `/health.json`; expect HTTP 200 and revision `fixture-v2`
