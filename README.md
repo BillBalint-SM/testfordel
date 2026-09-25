@@ -9,3 +9,5 @@ CI workflow, release process or deployment target.
 
 Run `git diff --check` and inspect the changed Markdown and local links.
 Supplementary documentation belongs in `docs/`.
+
+[Read the workflow smoke-check](docs/workflow-smoke.md).
